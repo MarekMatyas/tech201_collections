@@ -47,3 +47,5 @@ dog_list = {
 
 dog_list["training_done"].remove("crawl")
 print(dog_list["training_done"])
+
+
