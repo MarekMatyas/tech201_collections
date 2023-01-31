@@ -7,7 +7,13 @@
 - Complex
 
 **String** is text of any type
+Strings can be done by using single quotes ('') or double quotes ("").
+**String methods**
+'''strip()''' removes all white space
 
+'''white_space = "lot's of space at the end                "
+print(len(white_space)) # 70
+print(len(white_space.strip())) # 25 characters'''
 **Boolean** can only be True or False
 
 ### Operators
@@ -22,5 +28,6 @@
 - "<" less than 
 - "=" equal to
 - "!=" not equal to
-- '>' greater or equals to
+- ">=" greater or equals to
+- "<=" less than or equals to
 
