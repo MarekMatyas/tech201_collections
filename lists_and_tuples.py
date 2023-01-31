@@ -30,29 +30,30 @@ shopping_list.remove("bread")
 
 # Remove list item off the list without specifying it
 #
-# shopping_list.pop()
-# print(shopping_list)
-# shopping_list.pop()
-# print(shopping_list)
+
+shopping_list.pop()
+print(shopping_list)
+shopping_list.pop()
+print(shopping_list)
 
 # Mixed data type lists
-
-mixture = [1 , 2 , 3.4 , "one" , "two" , "three"]
-# print(mixture)
 #
-# # List slicing
-# print(mixture[1:3]) #[2, 3.4]
-# print(mixture[-2::]) # reverses the order
+# mixture = [1 , 2 , 3.4 , "one" , "two" , "three"]
+# # print(mixture)
+# #
+# # # List slicing
+# # print(mixture[1:3]) #[2, 3.4]
+# # print(mixture[-2::]) # reverses the order
+# #
+# # print(mixture[::2]) # bounces over the amount of indexes specified
 #
-# print(mixture[::2]) # bounces over the amount of indexes specified
-
-# Tuples
-
-# Exactly the same as lists, except they are immutable (un-editable)
-# Tuples are useful for elements you want to ensure data stays the same
-
-essential= ("bread", "eggs", "milk")
-print(essential)
-print(essential.count("bread"))
-#essential[0]= "fruit" # will not work. you cant change items in Tuples
-print(essential)
+# # Tuples
+#
+# # Exactly the same as lists, except they are immutable (un-editable)
+# # Tuples are useful for elements you want to ensure data stays the same
+#
+# essential= ("bread", "eggs", "milk")
+# print(essential)
+# print(essential.count("bread"))
+# #essential[0]= "fruit" # will not work. you cant change items in Tuples
+# print(essential)

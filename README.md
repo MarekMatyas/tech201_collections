@@ -127,3 +127,116 @@ print(f"You scored {score/max_score:%}")# You scored 61.538462%
 print(f"You scored {score/max_score:.2%}") #You scored 61.54%
 print(f"You scored {score/max_score:.0%}") #You scored 62%
 ```
+
+# Dictionaries
+
+**Dictionaries** use key/value pairs
+Key = a reference to a particular object
+Value = data storage mechanism you want to use 
+
+Example of creating a dictionary 
+``` 
+student_1 = {
+     "name": "Susan",
+     "stream": "DevOps",
+     "completed_lessons": 4,
+     "completed_lessons_names": ["variables", "data_types", "set_up"]
+```
+
+To access data within that dictionary use:
+`print(student_1["stream"])`
+
+To change a value in that dictionary use:
+`student_1["completed_lessons"] = 3`
+
+To remove items from that dictionary use:
+`student_1["completed_lessons_names"].remove("data_types")
+print(student_1["completed_lessons_names"])` to check the output
+
+**Methods**
+
+Keys to return:
+`print(student_1.keys())`
+Get certain item from the list:
+`print(student_1.get("name"))`
+Get the values of the dictionary:
+`print(student_1.values())`
+
+
+# Lists and Tuplets
+Lists or Arrays are all about data management.
+Let's create an example or a List
+`shopping_list = ["milk", "eggs", "bread", "fruit" , "cheese"]`
+
+To access certain items from the list (first item always being 0):
+```
+print(shopping_list[0]) # Shows "milk", the first item on the list
+print(shopping_list[3]) # shows "fruit", the 4th item on the list
+print(shopping_list[-1]) # shows "cheese", the last item on the list
+```
+
+To rewrite a value in our list: 
+``` 
+shopping_list[0] = "sugar"
+print(shopping_list) # replaces the wanted item on the list ['sugar', 'eggs', 'bread', 'fruit', 'cheese']
+```
+
+**List methods**
+
+To add to the list use `.append`:
+
+`shopping_list.append("vegetables")` adding the item at the end of our list
+
+To remove from the list use `.remove`:
+
+`shopping_list.remove("bread")`
+
+To remove the last item without specifying it use `.pop`:
+
+`shopping_list.pop()`
+
+### Example of list slicing
+
+``` 
+mixture = [1 , 2 , 3.4 , "one" , "two" , "three"]
+print(mixture[1:3]) #[2, 3.4]
+print(mixture[-2::]) # reverses the order
+print(mixture[::2]) # bounces over the amount of indexes specified
+```
+
+# Tuples
+
+They are exactly the same as lists, except they are immutable (un-editable).
+Tuples are useful for elements you want to ensure data stays the same.
+Quick example:
+
+``` 
+essential= ("bread", "eggs", "milk")
+print(essential)
+print(essential.count("bread"))
+#essential[0]= "fruit" # will not work. you cant change items in Tuples
+```
+
+## Sets and Frozen sets
+
+Lists and sets are very similar. Sets are unordered.
+To create a set :
+```
+car_parts = {"wheels", "doors", "exhaust"}
+print(car_parts)
+```
+To remove part of the set `.discard`: 
+
+``` 
+car_parts.discard("doors")
+print(car_parts)
+```
+
+To add things to a set `.add`:
+`car_parts.add("windows")`
+
+## Frozen sets
+Frozen sets are immutable (cannot be changed or manipulated version of a set. Un-ordered and un-indexed)
+
+Quick example of a frozen set:
+`x = frozenset([1, 2 ,3, 4, "five"])`
