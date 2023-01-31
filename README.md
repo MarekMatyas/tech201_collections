@@ -29,10 +29,9 @@ Strings can be done by using single quotes ('') or double quotes ("").
 ## String methods
 `strip()` removes all white space (empty space)
 
-`white_space = "lot's of space at the end              "`
-
-`print(len(white_space))` Shows us 70 characters including spaces.
-
-`print(len(white_space.strip()))` Shows us 25 characters.
+```
+white_space = "lot's of space at the end                "
+print(len(white_space)) # 70
+print(len(white_space.strip())) # 25 characters```
 
 
