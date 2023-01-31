@@ -195,6 +195,11 @@ To remove the last item without specifying it use `.pop`:
 
 `shopping_list.pop()`
 
+To access an item from the list by index 
+
+`print(shopping_list[1])`
+
+
 ### Example of list slicing
 
 ``` 
